@@ -4,16 +4,13 @@ body {
   margin: auto;
 }
 
-label {
-  display: block;
+label {  display: block;
 }
 
-input {
-  border: 1px solid black;
+input {  border: 1px solid black;
 }
 
-input.error {
-  border-color: red;
+input.error {  border-color: red;
 }
 
 .error-message {
