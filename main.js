@@ -1,12 +1,15 @@
 //COMENTAR ESTE BLOQUE PARA REVISAR LA FUNCIONALIDAD EN HTML
 
-function celsiusFahrenheit(tempC) {  return (tempC * 9) / 5 + 32;
+function celsiusFahrenheit(tempC) {
+  return (tempC * 9) / 5 + 32;
 }
 
-function celsiusKelvin(tempC) {  return tempC + 273.15;
+function celsiusKelvin(tempC) {
+  return tempC + 273.15;
 }
 
-function isValidTemp(tempC) {  const x = Number(tempC);
+function isValidTemp(tempC) {
+  const x = Number(tempC);
   return Number.isFinite(x);
 }
 
@@ -15,9 +18,12 @@ function tempCalc() {
     const tempC = prompt("Ingrese la temperatura en grados Celsius: ");
 
     if (isValidTemp(tempC)) {
-      const x = Number(tempC);      alert(
-        `La temperatura en grados Fahrenheit es de: ${celsiusFahrenheit(x).toFixed(2)}`,      );
-      alert(        `La temperatura en grados Kelvin es de: ${celsiusKelvin(x).toFixed(2)}`,
+      const x = Number(tempC);
+      alert(
+        `La temperatura en grados Fahrenheit es de: ${celsiusFahrenheit(x).toFixed(2)}`,
+      );
+      alert(
+        `La temperatura en grados Kelvin es de: ${celsiusKelvin(x).toFixed(2)}`,
       );
       break;
     } else {
